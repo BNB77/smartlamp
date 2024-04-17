@@ -15,7 +15,7 @@
 
 MicroDS3231 rtc;
 
-const byte hhOn = 23;                   
+const byte hhOn = 24;                   
 const byte hhOff = 7;                   
 const byte devMode = 0;                 
 const String lat = "55.75";             
@@ -25,7 +25,7 @@ const String lon = "37.62";
 byte digitBuffer[4];
 
                                         //API ключ для openweathermap.org
-const String appid = "456c55c0551e981fa796501825f45044"; 
+const String appid = ""; 
 
 OLED  myOLED(4, 5);                   
 
@@ -62,12 +62,13 @@ int nightX, nightY;
 
 #define BLYNK_PRINT Serial
 
-#define BLYNK_TEMPLATE_ID "TMPL4JyJ-rnPx"
-#define BLYNK_TEMPLATE_NAME "alisa"
-#define BLYNK_AUTH_TOKEN "XVAEJfYB5ouS4jwxngOwMXoIpu6gM5md"
+#define BLYNK_TEMPLATE_ID ""
+#define BLYNK_TEMPLATE_NAME ""
+#define BLYNK_AUTH_TOKEN ""
 
-char ssid[] = "MTS_GPON_945d00"; 
-char pass[] = "G8h4e7f3"; 
+char ssid[] = ""; 
+char pass[] = "
+"; 
 
 #include <BlynkSimpleEsp8266.h>
 #define relay LED_BUILTIN 
